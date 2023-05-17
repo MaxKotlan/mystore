@@ -25,7 +25,7 @@ services:
       NBXPLORER_BTCNODEENDPOINT: $APP_BITCOIN_NODE_IP:$APP_BITCOIN_P2P_PORT
       NBXPLORER_BTCRPCUSER: $APP_BITCOIN_RPC_USER
       NBXPLORER_BTCRPCPASSWORD: $APP_BITCOIN_RPC_PASS
-      NBXPLORER_POSTGRES: User ID=postgres;Host=btcpay-server_postgres_1;Port=5432;Application Name=nbxplorer;MaxPoolSize=20;Database=nbxplorer$APP_BITCOIN_NETWORK
+      NBXPLORER_POSTGRES: User ID=postgres;Host=sparkles-btcpay-server_postgres_1;Port=5432;Application Name=nbxplorer;MaxPoolSize=20;Database=nbxplorer$APP_BITCOIN_NETWORK
       NBXPLORER_AUTOMIGRATE: 1
       NBXPLORER_NOMIGRATEEVTS: 1
       NBXPLORER_BTCHASTXINDEX: 1
@@ -46,14 +46,14 @@ services:
       BTCPAY_DATADIR: "/data"
       BTCPAY_PLUGINDIR: "/data/plugins"
       BTCPAY_DOCKERDEPLOYMENT: "false"
-      BTCPAY_POSTGRES: "User ID=postgres;Host=btcpay-server_postgres_1;Port=5432;Database=btcpayserver$APP_BITCOIN_NETWORK"
+      BTCPAY_POSTGRES: "User ID=postgres;Host=sparkles-btcpay-server_postgres_1;Port=5432;Database=btcpayserver$APP_BITCOIN_NETWORK"
       BTCPAY_NETWORK: "$APP_BITCOIN_NETWORK"
       BTCPAY_BIND: 0.0.0.0:3003
       BTCPAY_CHAINS: "btc"
-      BTCPAY_BTCEXPLORERURL: "http://btcpay-server_nbxplorer_1:32838"
+      BTCPAY_BTCEXPLORERURL: "http://sparkles-btcpay-server_nbxplorer_1:32838"
       BTCPAY_BTCLIGHTNING: "type=lnd-rest;server=https://$APP_LIGHTNING_NODE_IP:$APP_LIGHTNING_NODE_REST_PORT/;macaroonfilepath=/lnd/data/chain/bitcoin/$APP_BITCOIN_NETWORK/admin.macaroon;allowinsecure=true"
       BTCPAY_SOCKSENDPOINT: $TOR_PROXY_IP:$TOR_PROXY_PORT
-      BTCPAY_EXPLORERPOSTGRES: User ID=postgres;Host=btcpay-server_postgres_1;Port=5432;Application Name=nbxplorer;MaxPoolSize=20;Database=nbxplorer$APP_BITCOIN_NETWORK
+      BTCPAY_EXPLORERPOSTGRES: User ID=postgres;Host=sparkles-btcpay-server_postgres_1;Port=5432;Application Name=nbxplorer;MaxPoolSize=20;Database=nbxplorer$APP_BITCOIN_NETWORK
       BTCPAY_TORSERVICES: "btcpayserver:$APP_HIDDEN_SERVICE"
 
   postgres:
