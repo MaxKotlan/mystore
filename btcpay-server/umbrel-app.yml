@@ -1,10 +1,10 @@
 manifestVersion: 1
-id: btcpay-server-two
-category: Development
+id: sparkles-btcpay-server
 name: BTCPay Server
-version: "1.7.12"
-icon: https://svgur.com/i/mvA.svg
 tagline: Accept Bitcoin payments with 0 fees & no 3rd party
+icon: https://svgur.com/i/mvA.svg
+category: Development
+version: "1.7.12"
 description: >-
   BTCPay Server is a payment processor that allows you to receive
   payments in Bitcoin (and altcoins) directly, with no fees, transaction cost or
