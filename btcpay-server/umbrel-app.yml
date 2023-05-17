@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: btcpay-server
+id: btcpay-server-two
 category: Development
 name: BTCPay Server
 version: "1.7.12"
